@@ -1,0 +1,180 @@
+body{
+    font-family: 'Ubuntu', 'Lora', serif, sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+    color: black;
+}
+
+div, p , input, button, form, span, a ,ul, li, h1, h2, h3{
+    box-sizing: border-box;
+}
+
+.logo-container{
+    padding-bottom: 0px;
+}
+.logo{
+    margin-top: 65px;
+}
+
+div.container, .booking-container{
+    width: 1170px;
+    margin: 0px auto;
+}
+.header{
+    background: rgb(78,190,254);
+    background: linear-gradient(120deg, rgba(78,190,254,1) 0%, rgba(60,154,225,1) 100%);
+    background-size: cover;
+}
+
+.wrapper{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer{
+    margin-top: 105px;
+    margin-right: -40px;
+    width: 490px;
+    color: white;
+}
+
+.button{
+    display:block;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #ffd429;
+    width: 225px;
+    padding: 17px;
+    margin-top: 15px;
+    text-decoration:none;
+    text-align: center;
+}
+
+.offer-h1, .h1-size-up{
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-top: 0px;
+
+}
+
+.offer-h1{
+    width:560px;
+    font-size: 37px;
+}
+
+.h1-size-up{
+    font-size: 59px;
+    padding: 0px;
+}
+
+.intro{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 405px;
+    margin-top: 5px;
+    line-height: 1.6em;
+    color: #e1e1e1;
+}
+.section-title{
+    width: 1170px;
+    margin: 50px auto;
+}
+div.title {
+    display: block;
+    text-align: center;
+}
+h2.title-h2{
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+.container-benefits {
+    display:flex;
+}
+
+div.benefits {
+    flex: 1 auto;
+    justify-content:space-between;
+}
+img.img-benefit{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.beefits-icon {
+    height: 75px;
+}
+
+.benefits-header,.benefits-description {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 280px;
+}
+h3{
+    padding-bottom: 10px;
+}
+
+.booking-section
+{
+    background-color: #ecf3f8;
+}
+.booking-container {
+    padding: 100px 0px;
+}
+
+
+.form-title {
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.booking-form-container{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-form {
+    display: block;
+    width: 350px;
+}
+
+.name,.email,.tel,.direction{
+    width: 350px;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid #bfb8d1;
+    margin-top: 15px;
+}
+
+.button-form {
+	border: 0;
+	cursor: pointer;
+	display: inline;
+    width: 350px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+footer{
+    background-color: #164d7a;
+    color: white;
+    padding: 60px 0px;
+}
+
+
+.credits{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
