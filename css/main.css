@@ -5,21 +5,26 @@ body{
     color: black;
 }
 
+body *
+{
+    /* border: 1px solid red; */
+}
+
 div, p , input, button, form, span, a ,ul, li, h1, h2, h3{
     box-sizing: border-box;
 }
 
-.logo-container{
-    padding-bottom: 0px;
-}
 .logo{
-    margin-top: 65px;
+    /* margin-top: 65px; */
 }
 
-div.container, .booking-container{
+.container{
     width: 1170px;
     margin: 0px auto;
+    padding: 100px 0px;
+    /* border: 1px solid red; */
 }
+
 .header{
     background: rgb(78,190,254);
     background: linear-gradient(120deg, rgba(78,190,254,1) 0%, rgba(60,154,225,1) 100%);
@@ -27,14 +32,15 @@ div.container, .booking-container{
 }
 
 .wrapper{
-    margin-top:20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .offer{
-    margin-top: 105px;
-    margin-right: -40px;
+    /* margin-top: 105px; */
+    /* margin-right: -40px; */
+    /* padding-top:105px; */
     width: 490px;
     color: white;
 }
@@ -55,7 +61,7 @@ div.container, .booking-container{
 
 .offer-h1, .h1-size-up{
     font-weight: bold;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
     margin-top: 0px;
 
 }
@@ -79,15 +85,16 @@ div.container, .booking-container{
     line-height: 1.6em;
     color: #e1e1e1;
 }
-.section-title{
-    width: 1170px;
-    margin: 50px auto;
+
+section{
+    margin: 0px auto;
+
 }
-div.title {
+
+
+.title-h2{
     display: block;
     text-align: center;
-}
-h2.title-h2{
     font-size: 25px;
     font-weight: 100;
     margin-bottom: 60px;
@@ -100,16 +107,14 @@ h2.title-h2{
 div.benefits {
     flex: 1 auto;
     justify-content:space-between;
+    text-align: center;
+    align-items:center
 }
 img.img-benefit{
-    display:block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-div.beefits-icon {
+    margin-bottom: 35px;
     height: 75px;
 }
+
 
 .benefits-header,.benefits-description {
     display: block;
@@ -121,12 +126,12 @@ h3{
     padding-bottom: 10px;
 }
 
-.booking-section
+.section-booking
 {
     background-color: #ecf3f8;
 }
 .booking-container {
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
 }
 
 
@@ -137,10 +142,14 @@ h3{
     margin-bottom: 60px;
 }
 
-.booking-form-container{
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
+input{
+    margin: 0 auto 15px;
+    width: 100%;
+}
+
+#booking-form{
+    max-width: 350px;
+    margin: 0px auto;
 }
 
 .booking-form {
@@ -153,7 +162,6 @@ h3{
     height: 50px;
     padding-left: 20px;
     border: 1px solid #bfb8d1;
-    margin-top: 15px;
 }
 
 .button-form {
@@ -162,12 +170,19 @@ h3{
 	display: inline;
     width: 350px;
     height: 50px;
-    margin-top: 15px;
+    margin: 0px auto;
+}
+.button-form:hover{
+    background-color: rgb(255, 200, 0);
 }
 
 footer{
     background-color: #164d7a;
     color: white;
+    /* padding: 60px 0px; */
+}
+
+footer > .container {
     padding: 60px 0px;
 }
 
@@ -177,4 +192,82 @@ footer{
     font-size: 14px;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        padding-top: 40px;
+
+    }
+    .offer, .img-banner{
+        width:50%;
+    }
+    .container{
+        width: 960px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container, .container-benefits {
+		width: 720px;
+        /* flex-direction: column;
+        justify-content: end; */
+        /* padding: 0px;
+        margin: 0px; */
+	}
+	 .wrapper {
+		flex-direction: column;
+        /* justify-content: center; */
+        /* width:700px; */
+        /* border: 1px solid blue; */
+        /* padding: 0px;
+        margin: 0px; */
+	}
+    .offer{
+        align-items: center;
+        width: 100%;;
+        margin: 0 auto;
+    }
+    .benefits{
+        margin-bottom: 100px;
+    }
+
+    .offer{
+        /* width: 450px; */
+        margin-bottom: 40px;
+    }
+    
+    .img-banner{
+        width:100%;
+    }
+    .title-h2
+    {
+        margin-top:0px;
+    }
+
+    .offer > .button{
+        width: 400px;
+    }
+
+    .offer-h1{
+        margin-bottom: -4px;
+    }
+
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+		width: 95%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+
 }
