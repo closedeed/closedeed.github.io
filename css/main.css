@@ -63,7 +63,6 @@ div, p , input, button, form, span, a ,ul, li, h1, h2, h3{
     font-weight: bold;
     /* margin-bottom: -10px; */
     margin-top: 0px;
-
 }
 
 .offer-h1{
@@ -265,6 +264,12 @@ footer > .container {
     .container {
 		width: 95%;
 	}
+    .offer-h1{
+        width: 100%;
+    }
+    .offer{
+        align-content: center;
+    }
 }
 
 /* 320px - 576px */
