@@ -39,19 +39,19 @@
             <h2 class="title-h2">Что вас ждет впереди</h2>
             <div class="wrapper">
                 <div class="benefits">
-                    <img src="./img/time.jpg" alt="Время отдыха" class="img-benefit">
-                    <h3 class="benefits-header">Свободное время</h3>
-                    <p class="benefits-description">Вам нужно время на семью и самое настоящее</p>
+                    <img src="./img/time.jpg" alt="Свободное время" class="img-benefit">
+                    <h3 class="benefits-header">Сайты на Wordpress</h3>
+                    <p class="benefits-description">Создание с нуля, по макету в Figma \ Photoshop</p>
                 </div>
                 <div class="benefits">
                     <img src="./img/palm.jpg" alt="Пальмы пляж" class="img-benefit">
-                    <h3 class="benefits-header">Яркие путешествия</h3>
-                    <p class="benefits-description">Работать откуда угодно - что может быть лучше?</p>
+                    <h3 class="benefits-header">Сайты на Tilda</h3>
+                    <p class="benefits-description">от 400р за один блок сайта</p>
                 </div>
                 <div class="benefits">
                     <img src="./img/rocket.jpg" alt="Цель" class="img-benefit">
-                    <h3 class="benefits-header">Создание ценности</h3>
-                    <p class="benefits-description">Нет ничего сильнее, чем жить не просто так, а создавая ценность
+                    <h3 class="benefits-header">Доработки\праки\оптимизация</h3>
+                    <p class="benefits-description">Изменить можно все, но я меняю так, чтобы клиент был доволен
                 </div>
             </div>
         </div>
@@ -59,15 +59,16 @@
     </section>
     <section class="section-booking">
         <div class="container">
-            <h2 class="form-title">Форма заказа билета в будущее</h2>
+            <h2 class="form-title">Форма заказа сайта будущего</h2>
             <div class="booking-form-container">
                 <form action="https://gauran.ga/form.php" id="booking-form" method="get">
                     <input type="text" id="name" class="name" placeholder="Имя" required="true">
                     <input type="email" id="email" class="email" placeholder="E-mail" required="true">
                     <input type="tel" id="phone" class="tel" placeholder="Телефон" required="true">
-                    <input type="text" id="message" class="direction" placeholder="Куда полечу в ближайшее время?"
+                    <input type="text" id="message" class="direction" placeholder="Напишите немного о задаче?"
                         required="true">
-                    <button type="submit" class="button button-form">Двигайся к мечте!</button>
+                    <a id="form-message-button" class="form button-submit" href="#">Отправить</a>
+                    <button id="submit" type="submit" class="button button-form">Двигайся к мечте!</button>
                 </form>
             </div>
         </div>
@@ -76,6 +77,16 @@
         <div class="container">
             <p class="credits">&copy; Все мечты защищены моим трудолюбием</p>
         </div>
+        <script>
+            document.getElementById('form-message-button').onclick = function () {
+                    var $name = document.getElementById('name').value;
+                    var $email = document.getElementById('email').value;
+                    var $phone = document.getElementById('phone').value;
+                    var $message = document.getElementById('message').value;
+                    location.href = "https://gauran.ga/form.php?name=" + $name + '&email=' + $email + "&phone=" + $phone + "&message="+$message;
+                //https://gauran.ga/form.php?name="32324"&email="324324@dsfsdf.ru"&phone="324234"&message="23432432"
+                }
+        </script>
     </footer>
 </body>
 
