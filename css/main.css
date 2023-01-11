@@ -171,13 +171,14 @@ input{
     width: 350px;
     height: 50px;
     margin: 0px auto;
-    visibility: hidden;
+
 }
 .button-form:hover{
     background-color: rgb(255, 200, 0);
 }
 .form.button-submit{
-    display:block;
+    display: none;
+    /* display:block; */
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

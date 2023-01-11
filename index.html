@@ -62,14 +62,14 @@
         <div class="container">
             <h2 class="form-title">Форма заказа сайта будущего</h2>
             <div class="booking-form-container">
-                <form action="https://gauran.ga/form.php" id="booking-form" method="get">
-                    <input type="text" id="name" class="name" placeholder="Имя" required="true">
-                    <input type="email" id="email" class="email" placeholder="E-mail" required="true">
-                    <input type="tel" id="phone" class="tel" placeholder="Телефон" required="true">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSces1f2v8QArFTJDGREPQcK35IQZRokeDExsAjpyK_Z9oXZSw/formResponse" id="booking-form" method="get">
+                    <input type="text" id="name" class="name" placeholder="Имя" required="true" name="entry.1026854705">
+                    <input type="email" id="email" class="email" placeholder="E-mail" required="true" name="entry.928681274">
+                    <input type="tel" id="phone" class="tel" placeholder="Телефон" required="true" name="entry.1760615767">
                     <input type="text" id="message" class="direction" placeholder="Напишите немного о задаче?"
-                        required="true">
+                        required="true" name="entry.1864497047">
                     <a id="form-message-button" class="form button-submit" href="#">Отправить</a>
-                    <button id="submit" type="submit" class="button button-form">Двигайся к мечте!</button>
+                    <button id="submit" type="submit" class="button button-form">Отправить!</button>
                 </form>
             </div>
         </div>
@@ -78,16 +78,7 @@
         <div class="container">
             <p class="credits">&copy; Все мечты защищены моим трудолюбием</p>
         </div>
-        <script>
-            document.getElementById('form-message-button').onclick = function () {
-                    var $name = document.getElementById('name').value;
-                    var $email = document.getElementById('email').value;
-                    var $phone = document.getElementById('phone').value;
-                    var $message = document.getElementById('message').value;
-                    location.href = "https://gauran.ga/form.php?name=" + $name + '&email=' + $email + "&phone=" + $phone + "&message="+$message;
-                //https://gauran.ga/form.php?name="32324"&email="324324@dsfsdf.ru"&phone="324234"&message="23432432"
-                }
-        </script>
+        
         <!-- Yandex.Metrika counter -->
         <script type="text/javascript">
                 (function (m, e, t, r, i, k, a) {
